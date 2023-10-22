@@ -4,11 +4,11 @@ import { useDebugValue, useState } from "react";
 
 import Head from "./Header";
 import Foot from "./Footer";
-import Link from 'next/link';
 
 export default function Home() {
   const [choices, setChoices] = useState([]);
   const  [isLoading, setIsLoading] = useState(false);
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <Head/>

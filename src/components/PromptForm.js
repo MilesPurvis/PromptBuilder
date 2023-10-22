@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import io from 'socket.io-client';
 
 export default function PromptForm({ onSubmit, isLoading }) {
   const [prompt, setPrompt] = useState('');
@@ -9,6 +10,17 @@ export default function PromptForm({ onSubmit, isLoading }) {
 
   const [question, SetQuestion] = useState('');
 
+  useEffect(() => {
+    const socket = io('http://localhost:3001');
+
+    socket.on('new text', (text) => {
+      setQuery(text);
+    });
+
+    return () => {
+      socket.disconnect();
+    };
+  }, []);
   return (
     <form
       onSubmit={(e) => {

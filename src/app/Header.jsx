@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function desciption(){
     return (
         <header>
-            <div class="backdrop">
+            <div>
                 <Image src="/PromptBuilder.png" width={1000} height={200}/>
             </div>
             <div>
