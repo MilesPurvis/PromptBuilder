@@ -1,4 +1,4 @@
-![image](https://github.com/Gabe261/PromptBuilder/assets/114610936/1d7cb882-991e-43ee-9413-5d6ee90654a3)
+![image](https://github.com/Gabe261/PromptBuilder/assets/114610936/02046843-adbf-4ce1-9f7f-3f7c5c0d3151)
 
 ### Prompt Builder
 Prompt Builder is a quick and easy to use learning tool that allows students<br></br>to query learning material and creates prompts that will aid in expanding their learning
